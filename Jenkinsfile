@@ -3,9 +3,9 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
-                date
+                sh "date"
                 echo 'Hello world! ...' 
-                pwd
+                sh "pwd"
             }
         }
     }
