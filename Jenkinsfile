@@ -7,7 +7,7 @@ pipeline {
                 // emailext body: 'This is test mail. pls ignore.', subject: 'Test Mail', to: 'sandeepprajapati1@gmail.com'
                 fileExists '/etc/sample.py'
                 withEnv(['USER=root']) {
-                    echo $USER
+                    echo "$USER"
                     sh "pwd"
                     echo "$HOME"
                     sh "ls"
