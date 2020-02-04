@@ -5,9 +5,7 @@ pipeline {
             steps {
                 sh "date"
                 // emailext body: 'This is test mail. pls ignore.', subject: 'Test Mail', to: 'sandeepprajapati1@gmail.com'
-                fileExists '/etc/sample.py' {
-                    echo "File path exists"
-                } 
+                fileExists '/etc/sample.py'
                 //else {
                 //    echo "File path not found."
                 //}                   
