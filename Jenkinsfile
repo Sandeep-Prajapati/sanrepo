@@ -6,7 +6,13 @@ pipeline {
                 sh "date"
                 // emailext body: 'This is test mail. pls ignore.', subject: 'Test Mail', to: 'sandeepprajapati1@gmail.com'
                 fileExists '/etc/sample.py'
-                junit 'junit.xml'
+                withEnv(['USER=root']) {
+                    echo $USER
+                    sh "pwd"
+                    echo "$HOME"
+                    sh "ls"
+                }
+                //junit 'junit.xml'
                 //println filename
                 //else {
                 //    echo "File path not found."
