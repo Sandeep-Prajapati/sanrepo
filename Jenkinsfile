@@ -9,6 +9,9 @@ pipeline {
                 echo 'Hello world! ...' 
                 sh "pwd"
                 echo "This is a sample print line."
+                echo "$HOME"
+                echo "$USER"
+                echo "$SHELL"             
             }
         }
     }
