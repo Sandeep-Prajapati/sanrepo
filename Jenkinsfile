@@ -5,8 +5,9 @@ pipeline {
             steps {
                 sh "date"
                 // emailext body: 'This is test mail. pls ignore.', subject: 'Test Mail', to: 'sandeepprajapati1@gmail.com'
-                def filename = fileExists '/etc/sample.py'
-                println filename
+                fileExists '/etc/sample.py'
+                junit 'junit.xml'
+                //println filename
                 //else {
                 //    echo "File path not found."
                 //}                   
