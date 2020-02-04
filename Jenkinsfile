@@ -11,7 +11,9 @@ pipeline {
                 echo "This is a sample print line."
                 echo "$HOME"
                 echo "$USER"
-                echo "$SHELL"             
+                echo "$SHELL"
+                pwd
+                ls
             }
         }
     }
