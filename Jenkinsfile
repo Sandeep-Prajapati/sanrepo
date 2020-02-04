@@ -6,12 +6,12 @@ pipeline {
                 sh "date"
                 // emailext body: 'This is test mail. pls ignore.', subject: 'Test Mail', to: 'sandeepprajapati1@gmail.com'
                 fileExists '/etc/sample.py'
-                env.BRANCH_NAME
-                JOB_NAME
-                WORKSPACE
-                NODE_NAME
-                BUILD_URL
-                EXECUTOR_NUMBER
+                //echo "env.BRANCH_NAME"
+                echo "$JOB_NAME"
+                echo "$WORKSPACE"
+                echo "$NODE_NAME"
+                echo "$BUILD_URL"
+                echo "$EXECUTOR_NUMBER"
                 withEnv(['USER=root']) {
                     echo "$USER"
                     sh "pwd"
