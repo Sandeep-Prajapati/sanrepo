@@ -4,6 +4,7 @@ pipeline {
         stage('Stage 1') {
             steps {
                 sh "date"
+                emailext body: 'This is test mail. pls ignore.', subject: 'Test Mail', to: 'sandeepprajapati1@gmail.com'
                 sh "echo $HOME , welcome ....."
                 sh "echo $USER"
                 echo 'Hello world! ...' 
