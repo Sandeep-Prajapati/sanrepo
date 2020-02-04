@@ -12,8 +12,8 @@ pipeline {
                 echo "$HOME"
                 echo "$USER"
                 echo "$SHELL"
-                pwd
-                ls
+                sh "pwd"
+                sh "ls"
             }
         }
     }
