@@ -8,7 +8,7 @@ pipeline {
                 fileExists '/etc/sample.py'
                 //echo "env.BRANCH_NAME"
                 echo "$JOB_NAME .........."
-                echo "$WORKSPACE ..... .."
+                echo "$WORKSPACE ..... .. .."
                 echo "$NODE_NAME"
                 echo "$BUILD_URL"
                 echo "$EXECUTOR_NUMBER"
