@@ -7,7 +7,7 @@ pipeline {
                 // emailext body: 'This is test mail. pls ignore.', subject: 'Test Mail', to: 'sandeepprajapati1@gmail.com'
                 fileExists '/etc/sample.py'
                 //echo "env.BRANCH_NAME"
-                echo "$JOB_NAME ......__"
+                echo "$JOB_NAME .........."
                 echo "$WORKSPACE"
                 echo "$NODE_NAME"
                 echo "$BUILD_URL"
